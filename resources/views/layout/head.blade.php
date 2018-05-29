@@ -15,6 +15,11 @@
         <link href={{asset("css/shop-homepage.css")}} rel="stylesheet">
     
       <link href={{asset("css/shop-item.css")}} rel="stylesheet">
-  
+  <style>
+        body {
+                  background-image: url("/storage/pattern.jpg");
+                  background-repeat: repeat;
+            }
+</style>
       </head>
     

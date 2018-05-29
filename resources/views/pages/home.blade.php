@@ -82,6 +82,6 @@
               {{$products->links("pagination::bootstrap-4")}}  
             </div> 
             @endif
-            
+            <div class="btn btn-primary">Button</div>
  
 @endsection
