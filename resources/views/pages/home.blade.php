@@ -62,10 +62,10 @@
             @if(count($products)>0)
             <div class="row">
                 @foreach($products as $product)
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card ">
-                  <div class="image">
-                  <a href="{{$product->slug}}"><img class="card-img-top" style='height:200px;' src="/storage/{{$product->image1}}" alt="{{$product->name}}"></a> 
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
+                <div class="card "  style="margin-bottom:10px;" >
+                  <div class="image" >
+                  <a href="{{$product->slug}}"><img class="card-img-top  img-thumbnail   mx-auto d-block" style='height:200px; max-width:300px;' src="/storage/{{$product->image1}}" alt="{{$product->name}}"></a> 
                    <a href="{{$product->slug}}"><h2><span>{{$product->price}}₮<span class='spacer'> </h2></a>
                   </div>
                   <div class="card-body">
@@ -82,6 +82,6 @@
               {{$products->links("pagination::bootstrap-4")}}  
             </div> 
             @endif
-            
+            <div class="btn btn-primary">Button</div>
  
 @endsection
