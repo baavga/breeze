@@ -38,7 +38,7 @@
                 <div class="card h-100">
                   <div class="image">
                   <a href="/{{$product->slug}}"><img class="card-img-top" style='height:200px;' src={{asset("storage/$product->image1")}} alt="{{$product->name}}"></a> 
-                   <a href="/{{$product->slug}}"><h2><span>{{$product->price}}₮<span class='spacer'> </h2></a>
+                   <a href="/{{$product->slug}}"><h2><span>{{$product->price}} ₮<span class='spacer'> </h2></a>
                   </div>
                   <div class="card-body">
                     <h4 class="card-title">

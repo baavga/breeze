@@ -12,15 +12,11 @@
             <link href={{asset("css/app.css")}} rel="stylesheet">
      
   <style>
-        #blur{
+        /* #blur{
             -webkit-filter: blur(2px);
             filter: blur(2px);
-        }
-        
-        /* body {
-                  background-image: url("/storage/pattern.jpg");
-                  background-repeat: repeat;
-            } */
+        } */
+         
 </style>
       </head>
     

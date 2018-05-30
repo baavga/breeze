@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Montserrat);/*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -182,10 +182,12 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight:bolder;
 }
 
 a:hover {
-  color:#f1f1f1;
+  color: #0056b3;
   text-decoration: underline;
 }
 
@@ -10436,8 +10438,7 @@ body {
 div.card-body {
   padding-top: 5px;
   /* box-shadow: 0 0 20px 0px black; */
-  background-color: #cff1fb;
-  /* Custom edited by jani */
+  background-color: #ebebeb;
 }
 
 img.card-img-top {
@@ -10445,7 +10446,7 @@ img.card-img-top {
 }
 
 a {
-  color: white;
+  color: #0c4980;
 }
 
 span.page-link:active {

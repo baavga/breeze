@@ -17,11 +17,18 @@
      font: bold 24px/45px Helvetica, Sans-Serif; 
      letter-spacing: -1px;  
      background: rgb(0, 0, 0); /* fallback color */
-     background: rgba(245,177,32, 0.7);
+     background: rgba(225, 168, 180, 1);
      padding: 10px; 
   }
   h2 span.spacer {
      padding:0 0px;
+  }
+  #productDiv:hover{
+    border-style: solid;
+    border-width: 3px;
+    border-color:#c9e051; 
+    
+    border-radius: 5px;
   }
   
 </style>
@@ -64,9 +71,9 @@
             <div class="row">
                 @foreach($products as $product)
               <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
-                <div class="card "  style="margin-bottom:10px;" >
+                <div class="card "  style="margin-bottom:10px;"  id ="productDiv">
                   <div class="image" >
-                  <a href="{{$product->slug}}"><img class="card-img-top  img-thumbnail   mx-auto d-block" style='height:200px; max-width:300px;' src="/storage/{{$product->image1}}" alt="{{$product->name}}"></a> 
+                  <a href="{{$product->slug}}"><img class="card-img-top mx-auto d-block" style='height:200px; max-width:300px;' src="/storage/{{$product->image1}}" alt="{{$product->name}}"></a> 
                    <a href="{{$product->slug}}"><h2><span class = "rounded">{{$product->price}}₮<span class='spacer'> </h2></a>
                   </div>
                   <div class="card-body">
