@@ -1,5 +1,5 @@
    <!-- Footer -->
-   <footer class="py-5 bg-dark">
+   <footer class="py-5 bg-dark" style="margin-top:80px;">
         <div class="container">
           <p class="m-0 text-center text-white">Copyright &copy; Breeze.mn 2018</p>
           <p class="m-0 text-center text-white">Хаяг: Монгол улс, Улаанбаатар-35 Баянгол дүүрэг, Нарангийн зам-20А, Гермес төв, Б14 павильон. <br> Утас: 88002142</p>

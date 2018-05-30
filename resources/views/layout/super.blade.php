@@ -5,6 +5,11 @@
 @include('layout.nav') 
 <div class="container ">
     <div class="row">
+        <div class="col-sm-12">
+            @yield('slider')
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-3">
             @include('layout.category',['categories'=>$categories]) 
         </div>
