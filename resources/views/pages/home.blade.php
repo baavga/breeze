@@ -43,14 +43,14 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img class="d-block img-fluid" src = {{asset("storage/slider/1.jpg")}} alt="Барилгын материал" style=" height:500px; width:100%;">
+          <img class="d-block img-fluid" src = {{asset("storage/slider/1.jpg")}} alt="" style=" height:500px; width:100%;">
         </div>
         <div class="carousel-item">
-            <img class="d-block img-fluid cropped" src = {{asset("storage/slider/3.jpg")}} alt="Бассейн хийнэ" style="width: 100%;
+            <img class="d-block img-fluid cropped" src = {{asset("storage/slider/3.jpg")}} alt="" style="width: 100%;
             height: 500px;">
         </div>
         <div class="carousel-item">
-            <img class="d-block img-fluid" src = {{asset("storage/slider/2.png")}} alt="Саун хийнэ" style="height:500px; width:100%;">
+            <img class="d-block img-fluid" src = {{asset("storage/slider/2.png")}} alt="" style="height:500px; width:100%;">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -66,7 +66,7 @@
 @endsection
 
             {{-- Product loop --}} 
-            <h3><img style="width:35px" src="/storage/icons/poke.png" alt="Бүх бараа"> Бүх бараа</h3>
+            <h3><img style="width:35px" src="/storage/icons/poke.png" alt="Вся продукція"> Вся продукція</h3>
             @if(count($products)>0)
             <div class="row">
                 @foreach($products as $product)
@@ -74,7 +74,7 @@
                 <div class="card "  style="margin-bottom:10px;"  id ="productDiv">
                   <div class="image" >
                   <a href="{{$product->slug}}"><img class="card-img-top mx-auto d-block" style='height:200px; max-width:300px;' src="/storage/{{$product->image1}}" alt="{{$product->name}}"></a> 
-                   <a href="{{$product->slug}}"><h2><span class = "rounded">{{$product->price}} руб<span class='spacer'> </h2></a>
+                   <a href="{{$product->slug}}"><h2><span class = "rounded">{{$product->price}} грн<span class='spacer'> </h2></a>
                   </div>
                   <div class="card-body">
                     <h4 class="card-title">

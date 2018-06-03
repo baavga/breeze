@@ -2,7 +2,7 @@
 
 <head>
 	<title>{{$product->name}}</title>
-	<meta NAME="KEYWORDS" CONTENT="{{$product->name}}, Сауна хийнэ, Бойлер зарна, шалны халаалт зарна">
+	<meta NAME="KEYWORDS" CONTENT="{{$product->name}} ">
 	<meta name="description" content="{{$product->name}}">
 
 </head>
@@ -34,7 +34,7 @@
 </style> 
 @section('content')
 <!-- The four columns -->
-<br><a href="/гермес/{{$product->category->slug}}" class='btn btn-dark'>{{$product->category->name}}</a><br>
+<br><a href="/toys/{{$product->category->slug}}" class='btn btn-dark'>{{$product->category->name}}</a><br>
 
 <div class="row">
 
@@ -64,7 +64,7 @@
 	</div>
 	<div class="col-lg-4">
 		<h3>{{$product->name}}</h3>
-		<h4>Үнэ: {{$product->price}} руб</h4>
+		<h4>Үнэ: {{$product->price}} грн</h4>
 		<p>{!!$product->shortdesc!!}</p> 
 	</div>
 	<!-- /.card -->
@@ -84,7 +84,7 @@
 	{{-- featured --}}
 
 	<div class="row" style="width:840px;margin-left:3px;">
-		<h3><img style="width:35px" src="/storage/icons/poke.png" alt="">Танд санал болгох</h3>
+		<h3><img style="width:35px" src="/storage/icons/poke.png" alt="">Рекомендовано</h3>
 		@if(count($products)>0)
 		<div class="row">
 			@foreach($products as $producty)
@@ -93,7 +93,7 @@
 					<div class="image">
 						<a href="{{$producty->slug}}"><img class="card-img-top" style='height:200px;' src={{asset('storage/'.$producty->image1)}} alt=""></a>
 						<a href="{{$producty->slug}}">
-							<h2><span>{{$producty->price}} руб<span class='spacer'> </h2></a>
+							<h2><span>{{$producty->price}} грн<span class='spacer'> </h2></a>
                   </div>
                   <div class="card-body">
                     <h4 class="card-title">

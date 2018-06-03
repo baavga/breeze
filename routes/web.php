@@ -18,11 +18,9 @@ Route::group(['prefix' => 'admin'], function () {
 });
 Route::get('/', 'PagesController@home');
 Route::get('{slug}', 'ProductsController@show');
-
-Route::get('/барилгын-материал-зарна/халаалт', 'CategoriesController@floorheat'); 
-Route::get('/гермес/{slug}','CategoriesController@index');
-Route::get('/Дээврийн-бороо-усны-хаялага/contactus', 'PagesController@contactus');
+ 
+Route::get('/toys/{slug}','CategoriesController@index');
+Route::get('/us/contactus', 'PagesController@contactus');
 Route::get('/бойлер/howto/', 'PagesController@howto');
-Route::get('/posts/{id}', 'PagesController@show');
-Route::get('/агшин-зуур-ус-халаагч/about', 'PagesController@about');
+Route::get('/posts/{id}', 'PagesController@show'); 
 

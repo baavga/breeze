@@ -8,15 +8,15 @@
     <div class="collapse navbar-collapse order-3 " id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="btn btn-info " href="/">Нүүр
+          <a class="btn btn-info " href="/">Додому
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item ">
+        {{-- <li class="nav-item ">
           <a class="btn btn-info mx-2" href="/бойлер/howto" >Зөвөлгөө</a>
-        </li> 
+        </li>  --}}
         <li class="nav-item">
-          <a class="btn btn-info" href="/Дээврийн-бороо-усны-хаялага/contactus">Холбоо барих</a>
+          <a class="btn btn-info mx-2" href="/us/contactus">Зв'яжіться з нами</a>
         </li>
       </ul>
     </div>
