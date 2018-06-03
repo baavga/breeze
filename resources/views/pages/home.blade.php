@@ -74,7 +74,7 @@
                 <div class="card "  style="margin-bottom:10px;"  id ="productDiv">
                   <div class="image" >
                   <a href="{{$product->slug}}"><img class="card-img-top mx-auto d-block" style='height:200px; max-width:300px;' src="/storage/{{$product->image1}}" alt="{{$product->name}}"></a> 
-                   <a href="{{$product->slug}}"><h2><span class = "rounded">{{$product->price}}₮<span class='spacer'> </h2></a>
+                   <a href="{{$product->slug}}"><h2><span class = "rounded">{{$product->price}} руб<span class='spacer'> </h2></a>
                   </div>
                   <div class="card-body">
                     <h4 class="card-title">

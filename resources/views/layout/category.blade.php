@@ -15,7 +15,7 @@
             @if(count($categories)>0)
             <div class="list-group">
               @foreach($categories as $category)
-              <a href="/барилгын-материал-зарна/{{$category->slug}}" class="list-group-item"><img src={{asset("$category->image")}} style="width:30px" alt="Шалны халаалт үнэ"> {{$category->name}}</a>
+              <a href="/гермес/{{$category->slug}}" class="list-group-item"><img src={{asset("$category->image")}} style="width:30px" alt="Шалны халаалт үнэ"> {{$category->name}}</a>
               @endforeach
             </div>
             @endif  

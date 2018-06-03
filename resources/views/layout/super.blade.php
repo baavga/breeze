@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"> 
-        @include('layout.head') 
+<html lang="en">
+    @include('layout.head')
+
 <body>
-@include('layout.nav') 
-<div class="container ">
-    <div class="row">
-        <div class="col-sm-12">
-            @yield('slider')
+    @include('layout.nav')
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-12">
+                @yield('slider')
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+    @include('layout.category',['categories'=>$categories])
+            </div>
+            <div class="col-lg-9">
+                @yield('content')
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-3">
-            @include('layout.category',['categories'=>$categories]) 
-        </div>
-         <div class="col-lg-9"> 
-            @yield('content')
-         </div>
-    </div> 
-        
-</div>
-  
-@include('layout.footer')
+    @include('layout.footer')
 </body>
+
 </html>
