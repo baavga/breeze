@@ -11,16 +11,7 @@
 |
 */
 
- 
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
-Route::get('/', 'PagesController@home');
-Route::get('{slug}', 'ProductsController@show');
- 
-Route::get('/toys/{slug}','CategoriesController@index');
-Route::get('/us/contactus', 'PagesController@contactus');
-Route::get('/бойлер/howto/', 'PagesController@howto');
-Route::get('/posts/{id}', 'PagesController@show'); 
+  
+Route::get('/', 'PagesController@welcome');  
+Route::resource('/phish', 'PhishController');
 

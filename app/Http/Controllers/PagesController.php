@@ -25,6 +25,13 @@ class PagesController extends Controller
     public function contactus(){
         return view('pages.contactus');
     }
-    
+    public function welcome(){
+        return view('welcome');
+    }
+  
+    public function store(Request $request)
+    { 
+        return $request->place;
+    }
     
 }
