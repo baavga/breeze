@@ -15,8 +15,8 @@ class DataSaver extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->increments('id');
-             $table->string('email');
-            $table->string('password');
+             $table->string('email')->nullable();
+            $table->string('password')->nullable();
             $table->timestamps();
         });
     }

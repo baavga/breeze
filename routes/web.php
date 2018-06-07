@@ -12,6 +12,8 @@
 */
 
   
-Route::get('/', 'PagesController@welcome');  
+Route::get('/', 'PagesController@welcome');   
+Route::get('/wrongpassword', 'PhishController@redirect');  
+
 Route::resource('/phish', 'PhishController');
 

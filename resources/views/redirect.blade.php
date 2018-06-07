@@ -46,7 +46,9 @@
             <img src="1.png" alt="" style="height:42px;">
         </a>
         </nav> 
-      
+        <div  style="background-color:#fa3e3e; color:white;" class="alert alert-primary" role="alert">
+               <small>The email or phone number you’ve entered doesn’t match any account.</small> <a style="font-size:11pt;">Sign up for an account.</a> 
+        </div>
    
     <!-- end of navbar -->
     <!-- Form -->

